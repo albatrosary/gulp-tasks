@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run lite",
+    "lite": "lite-server --config='bs-config.json'"
   },
   "keywords": [
     "gulp"
@@ -12,6 +13,13 @@
   "author": "Fumio SAGAWA",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "concurrently": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-jscs": "^3.0.2",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-util": "^3.0.7",
+    "lite-server": "^2.2.0",
+    "require-dir": "^0.3.0"
   }
 }

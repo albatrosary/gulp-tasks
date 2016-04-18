@@ -1,5 +1,5 @@
-var gulp = require('gulp');
+const gulpLoadPlugins = require('gulp-load-plugins');
+const requireDir = require('require-dir');
 
-gulp.task('default', function() {
-  // place code for your default task here
-});
+gulpLoadPlugins();
+requireDir('./gulp_tasks', {recurse:true});
